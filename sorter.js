@@ -8,7 +8,7 @@ $(document).ready(function(){
   var arr = [];
   var count_count = $('#sortable li').length;
   for(var i = 0; i < count_count; i++)
-    arr.push(i + 1);
+    arr.push(i );
   arr = shuffle(arr);
 
   $('#sortable li').each(function(index){
