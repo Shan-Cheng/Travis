@@ -31,6 +31,10 @@ test {
 	//testLogging.showStandardStreams = true		
 	//include '**/Paint*'
 //}
+task todolist(type: Test, dependsOn: testClasses) {
+	testLogging.showStandardStreams = true		
+	include '**/Todolist*'
+}
 
 task sort(type: Test, dependsOn: testClasses) {
 	testLogging.showStandardStreams = true		
