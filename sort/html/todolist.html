@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+ <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.js"></script>
+ <script>
+ function TodoCtrl($scope) { 
+  $scope.todos = [
+      {done: false, text:'grocery store'},
+  ];
+  
+  $scope.addTodo = function(){
+    if ($scope.todos.text == undefined){
+     // $scope.warning = true;
+    
+    }else{
+    var newTodo = {
+       done : false,
+      text:$scope.todoList
+    };
+        $scope.todos.push(newTodo); 
+       $scope.todoList='';
+    }
+   };
+   $scope.deleTodo = function(item){
+        $scope.todos.splice(item,1);
+   };
+}
+    
+ </script>
+ 
+  </head>
+
+  <body ng-controller ="TodoCtrl">
+   <h1> What To Do List!!</h1>
+ 
+    <div ng-repeat="todo in todos" >
+     
+     <input type="text" ng-model="todo.text" />
+        <button ng-click="deleTodo($index)">-</button>
+ </div>
+    
+    <form ng-submit = "addTodo()">
+      <input name="things" type ="text" ng-model ="todoList" />
+       <input name="add" type="submit" value = "+" />
+    </form>
+      <p name="warning" ng-show="warning">please enter something!!</p>
+    
+</body>
+</html>

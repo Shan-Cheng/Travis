@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="edu.ucsc.extension.Sorter" tests="1" skipped="0" failures="0" errors="0" timestamp="2015-08-06T23:00:02" hostname="Hsuans-MacBook-Air.local" time="35.672">
+  <properties/>
+  <testcase name="sortNumbers" classname="edu.ucsc.extension.Sorter" time="35.672"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
