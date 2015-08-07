@@ -27,7 +27,7 @@ test {
 	//include '**/Rectangles*'
 //}
 
-task paint(type: Test, dependsOn: testClasses) {
+task todolist(type: Test, dependsOn: testClasses) {
 	testLogging.showStandardStreams = true		
 	include '**/Todolist*'
 }
