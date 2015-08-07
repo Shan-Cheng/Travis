@@ -2,6 +2,8 @@ language: java
 jdk:
   - oraclejdk7
   - openjdk7
-script: junit Todolist.java
+  
+before_install:
+  - gem install selenium-webdriver
 
  
