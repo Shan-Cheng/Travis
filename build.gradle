@@ -27,10 +27,10 @@ test {
 	//include '**/Rectangles*'
 //}
 
-//task paint(type: Test, dependsOn: testClasses) {
-	//testLogging.showStandardStreams = true		
-	//include '**/Paint*'
-//}
+task paint(type: Test, dependsOn: testClasses) {
+	testLogging.showStandardStreams = true		
+	include '**/Todolist*'
+}
 
 task sort(type: Test, dependsOn: testClasses) {
 	testLogging.showStandardStreams = true		
